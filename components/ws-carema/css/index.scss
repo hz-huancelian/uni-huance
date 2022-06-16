@@ -1,0 +1,139 @@
+@import './icon.scss';
+.camera-view{
+		width: 750upx;
+		position: relative;
+		display: flex;
+}
+.camera {
+	width: 750upx;
+	height: 100%;
+}
+	
+.scan-canvas {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 750upx;
+	z-index: 99;
+	height: 100%;
+}
+
+.scan-canvas-photo{
+    position: absolute;
+    right: -800upx;
+    top: 0;
+}
+
+.scan-list{
+	z-index: 999;
+	position: absolute;
+	left: 30upx;
+	right: 30upx;
+	bottom: 30upx;
+	display: flex;
+	flex-direction: column;
+	.list-view{
+		width: 100%;
+		overflow-y: auto;
+		background: rgba($color: #FFFFFF, $alpha: 0.3);
+		padding-bottom: 10upx;
+		.scan-item{
+			color: #FFFFFF;
+			font-size: 30upx;
+			margin: 20upx 20upx 0 20upx;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: center;
+			.text{
+				max-width: 80%;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			.icon{
+				margin-left: 20upx;
+				width: 50upx;
+				height: 50upx;
+				border-radius: 8upx;
+			}
+			.icon-view{
+				background-color: #dd524d;
+				width: 50upx;
+				height: 50upx;
+				border-radius: 6upx;
+				margin-left: 20upx;
+				.icon-delete{
+					color: #FFFFFF;
+					font-size: 40upx;
+					line-height: 50upx;
+					text-align: center;
+				}	
+			}
+		}	
+	}
+	.btn-view{
+		height: 80upx;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+		margin-top: 2upx;
+		background: rgba($color: #FFFFFF, $alpha: 0.3);
+		.btn{
+			padding: 0 20upx;
+			border-radius: 6upx;
+			line-height: 60upx;
+			color: #FFFFFF;
+			font-size: 24upx;
+			margin-right: 10upx;
+		}
+		.del{
+			background-color: #dd524d;
+		}
+	}
+}
+
+.dialog-view{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 99999;
+	.dialog{
+		box-sizing: border-box;
+		padding: 0 50upx 50upx 50upx;
+		width: 600upx;
+		background-color: #FFFFFF;
+		border-radius: 30upx;
+		.result{
+			margin-top: 30upx;
+			.label{
+				color: grey;
+			}
+			.value{
+				margin-top: 30upx;
+				white-space:normal;
+				word-break:break-all;
+				word-warp:break-word;
+			}
+			.image-view{
+				margin-top: 30upx;
+				overflow: hidden;
+			}
+		}
+	}
+			
+	.icon-clear{
+		margin-top: 50upx;
+		font-size: 80upx;
+		color: #FFFFFF;
+	}
+}

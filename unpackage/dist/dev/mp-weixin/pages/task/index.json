@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "任务",
+  "usingComponents": {
+    "u-tabs": "/uview-ui/components/u-tabs/u-tabs",
+    "sample-term": "/components/sample/sample-term",
+    "approve-term": "/components/sample/approve-term",
+    "group-leader-term": "/components/sample/group-leader-term"
+  }
+}

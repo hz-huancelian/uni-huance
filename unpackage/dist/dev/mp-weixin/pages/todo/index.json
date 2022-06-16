@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "待办",
+  "usingComponents": {
+    "u-tabs": "/uview-ui/components/u-tabs/u-tabs",
+    "tabbar": "/components/tab/tab",
+    "sample-term": "/components/sample/sample-term",
+    "approve-term": "/components/sample/approve-term"
+  }
+}

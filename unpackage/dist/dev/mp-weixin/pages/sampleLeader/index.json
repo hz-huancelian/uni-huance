@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "任务样品",
+  "usingComponents": {
+    "sample-term": "/components/sample/sample-term"
+  }
+}

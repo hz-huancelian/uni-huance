@@ -1,0 +1,140 @@
+<template>
+    <view>
+        <view class="camera-cont">
+            <barcode
+                id="1"
+                class="barcode"
+                ref="barcode"
+                background="rgb(0,0,0)"
+                frameColor="#1C86EE"
+                scanbarColor="#1C86EE"
+                @marked="success1"
+                @error="fail1"
+                v-if="showCamera" 
+            ></barcode>
+            <view v-if="showTips">
+                <text class="tips target">{{tips}}</text>
+            </view>
+            <view v-if="showResult">
+                <text class="tips result">{{scanResult}}</text>
+            </view>
+
+        </view>
+        <!-- <button class="btn" @click="toStart">{{tips}}</button>
+        <button class="btn" @click="tocancel">取消扫码识别</button>
+        <button class="btn" @click="toFlash">开启闪光灯</button>
+        <button class="btn" @click="toscan">预览</button> -->
+    </view>
+</template>
+
+<script>
+    export default {
+        mounted() {
+            this.$refs.barcode.start({
+                conserve: false,
+                sound: 'default',
+                vibrate: false,
+            });
+        },
+        props: {
+            showTips: {
+                type: Boolean,
+                default: true,
+            },
+            showCamera: {
+                type: Boolean,
+                default: true,
+            },
+            showResult: {
+                type: Boolean,
+                default: true,
+            },
+            tips: {
+                type: String,
+                default: () => {
+                    return '';
+                },
+            },
+            scanResult: {
+                type: String,
+                default: () => {
+                    return '';
+                },
+            },
+        },
+        data() {
+            return {};
+        },
+
+        methods: {
+            success1(e) {
+                console.log('success1:' + JSON.stringify(e));
+            },
+            fail1(e) {
+                console.log('fail1:' + JSON.stringify(e));
+            },
+            toStart: function () {
+                this.$refs.barcode.start({
+                    conserve: false,
+                    sound: 'default',
+                    vibrate: false,
+                });
+            },
+            tocancel: function () {
+                this.$refs.barcode.cancel();
+            },
+            toFlash: function () {
+                this.$refs.barcode.setFlash(true);
+            },
+
+            toscan: function () {
+                console.log('scan:');
+                const barcodeModule = uni.requireNativePlugin('barcodeScan');
+                barcodeModule.scan('/static/barcode1.png', (e) => {
+                    console.log('scan_error:' + JSON.stringify(e));
+                });
+            },
+        },
+    };
+</script>
+
+<style>
+    .barcode {
+        width: 750rpx;
+        height: 500rpx;
+        background-color: #808080;
+    }
+
+    .btn {
+        top: 20rpx;
+        width: 730rpx;
+        margin-left: 10rpx;
+        margin-top: 10rpx;
+        background-color: #458b00;
+        border-radius: 10rpx;
+    }
+    .camera-cont {
+        width: 750rpx;
+        height: 650rpx;
+    }
+    .tips {
+        font-size: 28rpx;
+        /* color: #ff9900; */
+        display: flex;
+        align-items: center;
+        padding: 16rpx 30rpx;
+        border-radius: 8rpx;
+        transition: all 0.3s linear;
+        border: 1px solid #fff;
+        margin: 5rpx 0;
+    }
+    .target {
+        border-color: #fcbd71;
+        background-color: #fdf6ec;
+    }
+    .result {
+        border-color: #a0cfff;
+        background-color: #ecf5ff;
+    }
+</style>
+

@@ -1,0 +1,40 @@
+
+.title{
+	height:50rpx;
+	line-height: 50rpx;
+	font-size: 16px;
+}
+.mycanvas{
+	width: 100%;
+	height: calc(100vh - 200rpx);
+	background-color: #ECECEC;
+}
+.footer{
+	font-size: 16px;
+	height: 150rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-around;
+	        justify-content: space-around;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.left,.right{
+	line-height: 100rpx;
+	height: 100rpx;
+	width: 250rpx;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	-webkit-border-radius: 5rpx;
+	        border-radius: 5rpx;
+}
+.left{
+	background: #007AFF;
+}
+.right{
+	background:orange;
+}
+

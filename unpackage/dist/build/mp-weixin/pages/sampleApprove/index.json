@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "样品复核",
+  "usingComponents": {
+    "sample-term": "/components/sample/sample-term"
+  }
+}

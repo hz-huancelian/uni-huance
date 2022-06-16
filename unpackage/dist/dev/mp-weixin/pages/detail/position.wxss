@@ -1,0 +1,104 @@
+
+.sample-term-wrap.data-v-cc462b84{
+	width:calc(100%-70rpx);
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+}
+.sample-term.data-v-cc462b84{
+	position: relative;
+	padding-top:0rpx;
+	margin-top: 20rpx;
+	height: 120rpx;
+	width: 100%;
+	overflow-x: scroll!important;
+	overflow-y: hidden!important;
+	-webkit-border-radius: 19rpx;
+	        border-radius: 19rpx;
+	background:#fff;
+	-webkit-box-shadow: 0px 5px 11px 2px rgba(0,0,0,0.16);
+	        box-shadow: 0px 5px 11px 2px rgba(0,0,0,0.16);
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+.icon-wrap.data-v-cc462b84{
+	width:120rpx;
+	height: 120rpx;
+	display: inline-block;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+.icon.data-v-cc462b84{
+	width:80rpx;
+	height: 80rpx;
+	display: inline-block;
+}
+.position-text.data-v-cc462b84{
+	padding-left: 10px;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+	height: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+}
+.pos-text.data-v-cc462b84{
+	width: 100%;
+	height: 60rpx;
+	font-size: 30rpx;
+	color: #2E2E2E;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: end;
+	-webkit-align-items: flex-end;
+	        align-items: flex-end;
+	font-weight: bolder;
+}
+.write-addr.data-v-cc462b84{
+	width: 100%;
+	height: 50rpx;
+	margin-top: 6rpx;
+}
+.data-v-cc462b84 .position-text .uni-easyinput__content{
+	min-height: 0;
+	border:0;
+}
+.data-v-cc462b84 .position-text .uni-easyinput__content-input{
+	padding-left: 0!important;
+}
+.writeAddr-cover.data-v-cc462b84{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+

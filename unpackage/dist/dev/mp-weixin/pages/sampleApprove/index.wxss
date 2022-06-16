@@ -1,0 +1,89 @@
+
+uni-page-body.data-v-57f0e01d{
+			height: 100%;
+}
+.task-wrap.data-v-57f0e01d{
+		background: #F0F2FA;
+		height: 100vh;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		        flex-direction: column;
+}
+.project-info.data-v-57f0e01d{
+		/* height: 280rpx; */
+		width:calc(100%-98rpx);
+		background-color: #D6D8DF;
+		padding-left: 49rpx;
+		padding-right: 49rpx;
+		padding-bottom: 25rpx;
+}
+.sample-detail.data-v-57f0e01d{
+		margin-top: 20rpx;
+		font-size: 25rpx;
+		height: 32rpx;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		        align-items: center;
+}
+.sample-detail .title.data-v-57f0e01d{
+		color:#2E2E2E;
+		font-weight: bolder;
+		opacity: 0.8;
+		display: inline-block;
+		width: 175rpx;
+		text-align: right;
+}
+.sample-detail .value.data-v-57f0e01d{
+		color:#555555;
+		font-weight: 400;
+		opacity: 0.7;
+		width: 65%;
+		display: inline-block;
+		padding-left:30rpx;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		display: inline-block;
+}
+.scroll-wrap.data-v-57f0e01d{
+		-webkit-box-flex: 1;
+		-webkit-flex: 1;
+		        flex: 1;
+		/* height: calc(100vh-); */
+		overflow: scroll;
+}
+.tabContainer.data-v-57f0e01d{
+/* 		flex: 1;
+		overflow: scroll; */
+		padding-bottom: 30rpx;
+}
+.approve-all.data-v-57f0e01d{
+		width: 100%;
+		height: 105rpx;
+		background: #2F3A89;
+		-webkit-border-radius: 0px 0px 0px 0px;
+		        border-radius: 0px 0px 0px 0px;
+		opacity: 1;
+		/* border: 2px solid #FFFFFF; */
+		color: #fff;
+		font-size: 25rpx;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		        align-items: center;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		        justify-content: center;
+		font-weight: bolder;
+		letter-spacing: 1px;
+}
+

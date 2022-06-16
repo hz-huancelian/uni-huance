@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "hammer-picker": "/components/linkage-picker/linkage-picker"
+  }
+}

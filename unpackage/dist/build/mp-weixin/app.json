@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/task/index",
+    "pages/index/index",
+    "pages/login/index",
+    "pages/scanCode/index",
+    "pages/todo/index",
+    "pages/mine/index",
+    "pages/mine/role",
+    "pages/sampleApprove/index",
+    "pages/sampleLeader/index",
+    "pages/scanCode/writeCode",
+    "pages/detail/index",
+    "pages/detail/pollist",
+    "pages/handWriting/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "huance",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F0F2FA"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/task/index",
+        "text": "任务"
+      },
+      {
+        "pagePath": "pages/scanCode/index",
+        "text": "扫码"
+      },
+      {
+        "pagePath": "pages/todo/index",
+        "text": "待办"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "需要使用位置信息"
+    }
+  },
+  "usingComponents": {
+    "tab-bar": "/components/tabBar/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

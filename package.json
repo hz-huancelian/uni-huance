@@ -1,0 +1,15 @@
+{
+    "id": "Moo-FloatSwitch",
+    "name": "一个悬浮在底部跟随页面滚动若隐若现上下翻腾此起彼伏的开关",
+    "version": "0.02",
+    "description": "无",
+    "keywords": [
+        "开关"
+    ],
+    "dcloudext": {
+        "category": [
+            "前端组件",
+            "通用组件"
+        ]
+    }
+}
